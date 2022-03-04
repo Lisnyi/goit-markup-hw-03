@@ -38,6 +38,9 @@ body {
 .section.team-section {
   padding-top: 0;
 }
+.img-nogap {
+  display: block;
+}
 
 /* Logo */
 
@@ -63,11 +66,14 @@ body {
 }
 
 /* Header */
+
+.header-border {
+  border-bottom: 1px solid #ececec;
+}
 .header-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ececec;
 }
 .nav {
   display: flex;
@@ -117,10 +123,15 @@ body {
 .hero {
   background-color: var(--hero-backgraund-color);
   text-align: center;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
+  margin: auto;
   margin-top: 0;
   margin-bottom: 30px;
+  width: 696px;
 
   color: var(--white-color);
   font-weight: 900;
@@ -128,7 +139,6 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  align-items: center;
 }
 .hero-button {
   padding: 10px 32px;
@@ -266,7 +276,6 @@ body {
   margin-top: 30px;
   margin-right: 30px;
   flex-basis: calc((100% - 60px) / 3);
-  border-bottom: 1px solid #eeeeee;
 }
 .gallery-list .gallery-item:nth-child(3n) {
   margin-right: 0;
@@ -274,10 +283,15 @@ body {
 .gallery-list .gallery-item:nth-child(-n + 3) {
   margin-top: 0;
 }
+.item-description {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
 .gallery-title {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 0;
-  margin-left: 24px;
 
   color: var(--title-text-color);
   font-size: 18px;
@@ -286,8 +300,7 @@ body {
 }
 .gallery-text {
   margin-top: 4px;
-  margin-bottom: 20px;
-  margin-left: 24px;
+  margin-bottom: 0;
 
   font-size: 16px;
   line-height: 1.87;
